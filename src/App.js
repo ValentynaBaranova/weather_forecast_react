@@ -1,10 +1,11 @@
+import Weather from "./Weather";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1> Weather</h1>
+        <Weather defaultCity="Tokyo" />
         <footer>
           This project was coded by Matt Valentyna Baranova and is
           <a href="https://github.com/ValentynaBaranova/weather_forecast_react">
