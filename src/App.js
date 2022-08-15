@@ -5,11 +5,12 @@ function App() {
     <div className="App">
       <h1> Weather</h1>
       <footer>
-        Created by
+        This project was coded by Matt Valentyna Baranova and is
         <a href="https://github.com/ValentynaBaranova/weather_forecast_react">
           {" "}
-          Valentyna Baranova
+          open-sourced on GitHub
         </a>
+        and <a href="/">hosted on Netlify</a>
       </footer>
     </div>
   );
