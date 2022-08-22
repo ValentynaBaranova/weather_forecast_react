@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Tokyo" />
+        <Weather defaultCity="Kyiv" />
         <footer>
           This project was coded by Matt Valentyna Baranova and is
           <a href="https://github.com/ValentynaBaranova/weather_forecast_react">
