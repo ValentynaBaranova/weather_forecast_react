@@ -7,10 +7,9 @@ h1 {
 }
 
 ul {
-  margin: 0 0 10px;
-  padding: 10px;
   background-color: white;
   opacity: 0.6;
+  padding-left: 0 !important;
 }
 
 li {
@@ -56,6 +55,7 @@ li {
 
 .units a {
   text-decoration: none;
+  font-weight: 500;
 }
 
 .search-form {
@@ -93,4 +93,13 @@ li {
 
 #description {
   text-transform: capitalize;
+}
+
+.WeatherForecast {
+  text-align: center;
+}
+
+.temp_min {
+  opacity: 0.6;
+  padding-left: 5px;
 }
