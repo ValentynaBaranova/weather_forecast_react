@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Temperature(props) {
   return (
@@ -6,7 +6,7 @@ export default function Temperature(props) {
       <span className="temperature" id="temperature">
         {props.celsium}
       </span>
-      <span className="units">°C</span>
+      <span className="units"> °C</span>
     </div>
   );
 }

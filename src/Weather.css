@@ -1,22 +1,29 @@
+:root {
+  --text-primary-color: rgb(17, 2, 83);
+}
 h1 {
-  color: #70757a !important;
-  font-size: 28px !important;
+  color: var(--text-primary-color) !important;
+  font-size: 40px !important;
   font-weight: 100;
   line-height: 28px;
+  font-weight: 900 !important;
   margin: 0;
+  text-shadow: 1px 3px 1px #ffca2c;
+}
+p,
+.search-form input {
+  font-size: 16px;
 }
 
 ul {
-  background-color: white;
-  opacity: 0.6;
   padding-left: 0 !important;
 }
 
 li {
-  color: #70757a;
-  font-size: 16px;
-  font-weight: normal;
-  height: 19px;
+  color: var(--text-primary-color);
+  font-size: 18px;
+  font-weight: 600;
+  height: 24px;
   line-height: 1;
   list-style: none;
 }
@@ -28,19 +35,24 @@ li {
   border-radius: 10px;
   max-width: 600px;
   text-align: left;
+  background: linear-gradient(
+    111.5deg,
+    rgb(187, 232, 255) 11.1%,
+    rgb(61, 106, 255) 107.5%
+  );
 }
 
 .weather-icon {
   height: 64px;
   width: 64px;
-  margin-right: 10px;
+  margin: 0 5px 0 10px;
   display: block;
   float: left;
 }
 
 .temperature {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
+  color: var(--text-primary-color);
+  font-size: 70px;
   font-weight: 400;
   line-height: 1;
 }
@@ -48,8 +60,8 @@ li {
 .units {
   position: relative;
   top: -34px;
-  font-size: 20px;
-  color: rgb(33, 33, 33);
+  font-size: 24px;
+  color: var(--text-primary-color);
   font-weight: bold;
 }
 
@@ -77,29 +89,35 @@ li {
   color: 000;
 }
 
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
-}
-
-.weather-forecast-temperature-min {
-  opacity: 0.5;
-}
-
-.weather-forecast-temperatures {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-#description {
-  text-transform: capitalize;
-}
-
 .WeatherForecast {
   text-align: center;
+  display: flex;
+  color: var(--text-primary-color);
+  margin: 20px -5px 0 -5px !important;
+  background: #ebf7ff;
+  border: 1px solid rgb(162, 162, 162);
+  box-shadow: 3px 3px 5px rgb(2, 50, 106);
+}
+.WeatherForecast .col {
+  padding: 0;
+  border: 1px solid rgb(177, 177, 177);
+  width: 60px !important;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  box-shadow: inset -3px -1px 5px rgb(177, 177, 177);
+}
+
+.WeatherForecast .col:hover {
+  opacity: 0.5;
+  transition: ease-in-out 200ms;
 }
 
 .temp_min {
   opacity: 0.6;
   padding-left: 5px;
+}
+
+.weekday {
+  font-weight: 900;
+  font-size: 20px;
 }

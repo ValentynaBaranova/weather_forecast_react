@@ -7,7 +7,7 @@ function App() {
       <div className="container">
         <Weather defaultCity="Kyiv" />
         <footer>
-          This project was coded by Matt Valentyna Baranova and is
+          This project was coded by Valentyna Baranova and is
           <a href="https://github.com/ValentynaBaranova/weather_forecast_react">
             {" "}
             open-sourced on GitHub
